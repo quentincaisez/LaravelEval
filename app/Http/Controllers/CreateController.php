@@ -12,6 +12,7 @@ class CreateController extends Controller
   {
     $constructors = Constructor::all();
     $dates = Date::all();
+
     return view('create', ['constructors'=> $constructors, 'dates' => $dates]);
 
   }

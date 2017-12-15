@@ -31,6 +31,7 @@
       @else
       <td> Na </td>
       @endif
+
       @if($play->constructors)
         <td>
             @foreach($play->constructors as $key => $value)

@@ -2,7 +2,7 @@ body{
   background-color: black;
   color : silver;
   font-family: cursive; pacifico;
-  
+
 }
 li {
   list-style: none;
@@ -44,9 +44,11 @@ input , option{
   text-align: center;
   border-radius: 2px;
 }
+
 select{
   padding: 10px 0;
   width: 200px;
+  text-align-last: center;
   background-color: grey;
   border: solid 1px grey ;
   border-radius: 2px;

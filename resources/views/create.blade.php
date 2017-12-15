@@ -33,9 +33,11 @@
         @foreach($constructors as $constructor)
             <option value="{{ $constructor->id}}">{{ $constructor->constructor}}</option>
         @endforeach
+
         </select>
          <br>
+           
 
-        <input type="submit" value="Inserer un jeu">
+        <input class="send" type="submit" value="Inserer un jeu">
   </form>
 @endsection

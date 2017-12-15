@@ -38,7 +38,7 @@
             <option value="{{ $key}}">{{ $value}}</option>
           @endforeach
         </select>
-
+        <br>  
          <input type="submit" value="Update">
 
    </form>

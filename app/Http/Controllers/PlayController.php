@@ -10,19 +10,17 @@ use App\Date;
 class PlayController extends Controller
 {
   public function insertOne(Request $request){
-    $play = new Play;//creer un nouvelle objet chat
+    $play = new Play;//creer un nouvelle objet
     $play->name = $request->name;//instancie les éléments
     $play->price = $request->price;//instancie les éléments
     $play->quantity = $request->quantity;//instancie les éléments
     $play->note = $request->note;//instancie les éléments
-
     $play->date_id = $request->date;
-
     $play->save();//permet de sauvegarder dans la base de donnée
     $play->constructors()->attach($request->constructor);//permet de sauvegarder la couleur grace a l id
-
-   return redirect('/');//redirection
+    return redirect('/');//redirection
    }
+
    public function deleteOne(Request $request,$id){
     $play = Play::find($id);
     $play->constructors()->detach();
