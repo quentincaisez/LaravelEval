@@ -15,7 +15,7 @@
         <input type="number" name="price" min="0" ondragover=""value="{{ $play->price}}"><br>
 
         <label for="quantity">Quantité </label>
-        <input type="number" name="quantity" value="{{ $play->quantity}}"><br>
+        <input type="number" name="quantity" value="{{ $play->quantity}}" min="0" ><br>
 
         <label for="note">Note </label>
         <input type="number" name="note" min="0" max="20" value="{{ $play->note}}" ><br>
@@ -38,7 +38,13 @@
             <option value="{{ $key}}">{{ $value}}</option>
           @endforeach
         </select>
-        <br>  
+        <br>
+
+        <label for="comment">Résumer</label>
+        <textarea name="comment" rows="8" cols="80">{{ $play->comment}}</textarea>
+        <br>
+
+
          <input type="submit" value="Update">
 
    </form>

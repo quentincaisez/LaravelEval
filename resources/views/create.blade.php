@@ -36,7 +36,12 @@
 
         </select>
          <br>
-           
+
+         <label for="comment">Résumer </label>
+         <textarea name="comment" rows="8" cols="80"></textarea>
+         <br>
+
+
 
         <input class="send" type="submit" value="Inserer un jeu">
   </form>

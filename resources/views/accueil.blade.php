@@ -13,6 +13,7 @@
       <th>quantité</th>
       <th>note</th>
 
+
       <th>date</th>
       <th>plateforme</th>
       <th>delete</th>
@@ -25,6 +26,7 @@
       <td>  {{$play->price}} </td>
       <td>  {{$play->quantity}} </td>
       <td>  {{$play->note}} / 20 </td>
+
 
       @if($play->date)
       <td>  {{$play->date->date}}</td>

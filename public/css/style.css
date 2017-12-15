@@ -17,11 +17,14 @@ a:hover{
   color:gold;
   text-decoration: none;
 }
+
 h1 {
   text-align: center;
   font-size: 55px;
 }
-
+h3 {
+  letter-spacing: 5px;
+}
 .flexcenter {
   display: flex;
   justify-content: flex-end;
@@ -36,7 +39,13 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-input , option{
+.flexcenterdet{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+input , option , textarea{
   padding: 10px 0;
   width: 200px;
   background-color: grey;
@@ -81,4 +90,37 @@ button:hover{
     border : solid 2px gold;
     transition: linear 1s;
     border-radius: 15px 0px ;
+}
+.cadre{
+  width: 200px;
+}
+textarea{
+  color:gold;
+  height: 300px;
+}
+.parares{
+  width: 50%;
+  text-align: center;
+}
+.separator{
+  width: 20%;
+}
+.noel{
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 150px;
+  letter-spacing: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(orange), to(red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flocon{
+  width: 4%;
+  margin: 0 50px;
+}
+.girlande{
+  width: 25%;
+  margin: 0 50px;
 }

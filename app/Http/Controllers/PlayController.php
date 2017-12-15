@@ -15,6 +15,8 @@ class PlayController extends Controller
     $play->price = $request->price;//instancie les éléments
     $play->quantity = $request->quantity;//instancie les éléments
     $play->note = $request->note;//instancie les éléments
+    $play->comment = $request->comment;//instancie les éléments
+
     $play->date_id = $request->date;
     $play->save();//permet de sauvegarder dans la base de donnée
     $play->constructors()->attach($request->constructor);//permet de sauvegarder la couleur grace a l id
@@ -52,6 +54,8 @@ class PlayController extends Controller
         $play->price = $request->price;//instancie les éléments
         $play->quantity = $request->quantity;//instancie les éléments
         $play->note = $request->note;//instancie les éléments
+        $play->comment = $request->comment;//instancie les éléments
+      
         $play->date_id = $request->date;
 
         $play->save();

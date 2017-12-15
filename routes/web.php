@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'BaseController@index');
+Route::get('/details', 'DetailsController@index');
+Route::get('/bonus', 'BonusController@index');
 Route::get('/create', 'CreateController@index');
 
 Route::post('/play/insert', 'PlayController@insertOne');
